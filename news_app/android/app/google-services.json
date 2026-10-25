@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "323876479953",
+    "project_id": "just-the-facts-cb7b6",
+    "storage_bucket": "just-the-facts-cb7b6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323876479953:android:84bebf6afa31ded282b6f0",
+        "android_client_info": {
+          "package_name": "com.example.just_the_facts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323876479953-3utgf17h1qcn80f5gadj81kstonod790.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgxzVftWowg4FYY2L_04ov7AIa9vmTHMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323876479953-3utgf17h1qcn80f5gadj81kstonod790.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323876479953-4mrulhbo74fnt1i99kpjamvd25tc2uci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.newsApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323876479953:android:ba6b8a5735a3218982b6f0",
+        "android_client_info": {
+          "package_name": "com.example.news_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323876479953-3utgf17h1qcn80f5gadj81kstonod790.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgxzVftWowg4FYY2L_04ov7AIa9vmTHMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323876479953-3utgf17h1qcn80f5gadj81kstonod790.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323876479953-4mrulhbo74fnt1i99kpjamvd25tc2uci.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.newsApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

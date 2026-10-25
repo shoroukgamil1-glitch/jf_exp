@@ -1,0 +1,40 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+<<<<<<< HEAD
+    match /{document=**} {
+      allow read, write: if false;
+=======
+    match /users/{userId} {
+      allow read, write: if request.auth != null
+        && request.auth.uid == userId;
+
+      match /savedVideos/{videoId} {
+        allow read, write: if request.auth != null
+          && request.auth.uid == userId;
+      }
+    }
+
+    match /videos/{videoId}/comments/{commentId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly([
+          'uid',
+          'authorName',
+          'text',
+          'createdAt'
+        ])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.authorName is string
+        && request.resource.data.authorName.size() <= 80
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 1000
+        && request.resource.data.createdAt == request.time;
+      allow delete: if request.auth != null
+        && resource.data.uid == request.auth.uid;
+>>>>>>> a2a9292b5106b86e76b941b2bdbf6d1df4d37348
+    }
+  }
+}

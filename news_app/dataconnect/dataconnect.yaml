@@ -1,0 +1,21 @@
+specVersion: "v1"
+<<<<<<< HEAD
+serviceId: "justthefactsexperiment"
+=======
+serviceId: "newsapp"
+>>>>>>> a2a9292b5106b86e76b941b2bdbf6d1df4d37348
+location: "us-east1"
+schemas:
+  - source: "./schema"
+    datasource:
+      postgresql:
+        database: "fdcdb"
+        cloudSql:
+<<<<<<< HEAD
+          instanceId: "justthefactsexperiment-fdc"
+=======
+          instanceId: "newsapp-fdc"
+>>>>>>> a2a9292b5106b86e76b941b2bdbf6d1df4d37348
+          # schemaValidation: "STRICT"     # STRICT mode makes Postgres schema match Data Connect exactly.
+          # schemaValidation: "COMPATIBLE" # COMPATIBLE mode makes Postgres schema compatible with Data Connect.
+connectorDirs: ["./example"]
